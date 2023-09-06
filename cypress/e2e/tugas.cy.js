@@ -7,8 +7,8 @@ const invalidPassword = 'InvalidPassword';
 
 beforeEach(() => {
   cy.visit(url); //Mengujungi website
-  cy.get('#menu-toggle').click();
-  cy.contains('Login').click();
+  cy.get('#menu-toggle').click(); //Klik toglle
+  cy.contains('Login').click(); //Klik Login untuk masuk login page
 });
 
 describe('Login Feature', () => {
